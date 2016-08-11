@@ -3,11 +3,11 @@ var request = require("request"),
   url = "http://www.chairleague.com/scrims";
 
   
+// TODO: link
 var scrim_output = request(url, function (error, response, body) {
   if (!error) {
     var $ = cheerio.load(body);
     var scrim = [];
-    // day/month
     $('.name').each(function(i, name) {
       scrim[i] = {
         name: name.children[0].data
