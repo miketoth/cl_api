@@ -1,5 +1,5 @@
 var chairleague = "http://www.chairleague.com";
-function scrape(callback) {
+function scrim_scrape(callback) {
   var request = require("request"),
     cheerio = require("cheerio"),
     url = "http://www.chairleague.com/scrims";
@@ -35,4 +35,4 @@ function scrape(callback) {
   });
 }
 
-module.exports = scrape;
+module.exports = scrim_scrape;
