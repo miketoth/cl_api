@@ -1,10 +1,9 @@
-var rsvp = require('rsvp');
 var request = require("request"),
   cheerio = require("cheerio"),
   url = "http://www.chairleague.com/divisions/division-1";
 
   
-var output = request(url, function (error, response, body) {
+var division_output = request(url, function (error, response, body) {
   var division = [];
   var temp = [];
   if (!error) {
