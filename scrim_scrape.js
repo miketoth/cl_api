@@ -1,8 +1,8 @@
-var chairleague = "http://www.chairleague.com";
+var chairleague = "https://www.chairleague.com";
 function scrim_scrape(callback) {
   var request = require("request"),
     cheerio = require("cheerio"),
-    url = "http://www.chairleague.com/scrims";
+    url = chairleague + "/scrims";
 
   return request(url, function (error, response, body) {
     if (!error) {

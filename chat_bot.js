@@ -1,5 +1,6 @@
 var secret = require('./secrets.json');
 var scrim_scrape = require('./scrim_scrape.js');
+var match_scrape = require('./match_scrape.js');
 const Discord = require('discord.js');
 const bot = new Discord.Client();
 const botname = 'zordon';
@@ -46,7 +47,6 @@ bot.on('message', message => {
       message.reply("What is it, ranger?");
     }
   }
-
 });
 
 bot.login(secret.email, secret.password);
